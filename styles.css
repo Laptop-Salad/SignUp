@@ -66,10 +66,10 @@ input {
 }
 
 button {
-    position: relative;
+    position: fixed;
     display: block;
-    top: 20px;
-    width: 30%;
+    top: 65vh;
+    width: 10vw;
     height: 4vh;
     padding: 2px;
     background: #BFABCB;
@@ -92,9 +92,13 @@ form > div {
     margin-left: 10%;
 }
 
+.pass-container {
+    height: 10vh;
+}
+
 #login {
-    position: relative;
-    top: 16px;
+    position: fixed;
+    top: 70vh;
 }
 
 #login a {

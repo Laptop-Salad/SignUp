@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Sign Up</title>
 </head>
@@ -43,15 +44,16 @@
                         <input type="email" id="email" name="email" placeholder="Email Address" required>
                     </div>
 
-                    <div class="left">
-                        <input type="password" id="pass" name="pass" placeholder="Password" onchange="passwordCheck()" required>
+                    <div class="left pass-container">
+                        <input type="password" id="pass" name="pass" placeholder="Password"  onchange="checkPass()" required>
+                        <p id="no-match" style="display:none;">Passwords do not match</p>
                     </div>
 
                     <div class="right">
-                        <input type="password" id="cpass" name="cpass" placeholder="Confirm Password" onchange="passwordCheck()" required>
+                        <input type="password" id="cpass" name="cpass" placeholder="Confirm Password"  onchange="checkPass()" required>
                     </div>
 
-                    <button type="submit">Create Account</button>
+                    <button id="submit">Create Account</button>
 
                     <div id="login">
                         <p><strong>Already have an account? </strong><a onClick="window.location.reload();">Log In</a></p>
