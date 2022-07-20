@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div id="container">
+
+        <div id="image-card">
+            <img src="assets/pink.jpg" alt="pink building">
+        </div>
+
+        <div id="sign-up-card">
+            <p>This is a demo registration page! You know you need something like this in your life to help you realize your 
+                deepest dreams. Sign up now to get started.
+            </p>
+
+            <p>You know you want to.</p>
+
+            <div id="form-container">
+                <p><strong>Let's do this!</strong></p>
+                <p style="margin-bottom: 20px;">All fields are required.</p>
+
+                <form>
+                    
+                    <div class="left">
+                        <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                    </div>
+
+                    <div class="right">
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                    </div>
+
+                    <div class="left">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="right">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="left">
+                        <input type="password" id="pass" name="pass" placeholder="Password" onchange="passwordCheck()" required>
+                    </div>
+
+                    <div class="right">
+                        <input type="password" id="cpass" name="cpass" placeholder="Confirm Password" onchange="passwordCheck()" required>
+                    </div>
+
+                    <button type="submit">Create Account</button>
+
+                    <div id="login">
+                        <p><strong>Already have an account? </strong><a onClick="window.location.reload();">Log In</a></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
